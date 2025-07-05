@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nakul Bhandare - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out both;
+    }
+    .animate-slide-up {
+      animation: slideUp 1s ease-in-out both;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+
+<!-- Dark Mode Toggle -->
+<button onclick="document.documentElement.classList.toggle('dark')" class="fixed bottom-6 right-6 z-50 p-3 bg-gray-800 text-white rounded-full shadow-lg">
+  🌓
+</button>
+
+<!-- Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow z-50 animate-fade-in">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <span class="font-bold text-indigo-700 text-xl dark:text-white">Nakul Bhandare</span>
+    <div class="space-x-6 text-gray-700 dark:text-gray-300 text-sm font-medium">
+      <a href="#skills" class="hover:text-indigo-500">Skills</a>
+      <a href="#projects" class="hover:text-indigo-500">Projects</a>
+      <a href="#contact" class="hover:text-indigo-500">Contact</a>
+      <a href="Nakul_Bhandare.pdf" download class="bg-indigo-600 text-white px-3 py-1 rounded hover:bg-indigo-700">Resume</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Header Section -->
+<header class="relative bg-gray-900 text-white pt-36 pb-24 px-6">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <!-- Left Text Column -->
+    <div class="space-y-6" data-aos="fade-right">
+      <h1 class="text-5xl font-extrabold leading-tight">I'm Nakul,<br class="hidden sm:block"> a <span class="text-blue-500">Cloud-Native Developer</span></h1>
+      <p class="text-gray-300 max-w-lg">5+ years of experience in building scalable and secure solutions with Golang, DevOps, and ML on AWS, Azure, and GCP.</p>
+      <div class="flex gap-4">
+        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition">🚀 Browse Projects</a>
+        <a href="Nakul_Bhandare.pdf" download class="text-white underline hover:text-blue-300">Download Resume</a>
+      </div>
+    </div>
+
+    <!-- Right Image Column -->
+    <div class="relative w-full max-w-sm mx-auto" data-aos="fade-left">
+     <img src="nakul-profile.jpg" alt="Nakul Bhandare" class="rounded-xl shadow-lg ring-4 ring-blue-600 ring-offset-2" />
+    </div>
+  </div>
+
+  <!-- Side Cards Section -->
+  <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up">
+      <h3 class="text-xl font-semibold text-white mb-2">About Me</h3>
+      <p class="text-gray-400">Innovative engineer passionate about building intelligent, cloud-native systems. Currently pursuing MSCS at UOP with a focus on ML for cloud security.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-xl font-semibold text-white mb-2">My Work</h3>
+      <p class="text-gray-400">Delivered robust backend solutions, scalable platforms, and predictive analytics tools used across industries and universities.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-xl font-semibold text-white mb-2">Connect With Me</h3>
+      <div class="flex space-x-4 mt-2 text-xl text-white">
+        <a href="mailto:bhandarenakul@gmail.com" class="hover:text-blue-400">📧</a>
+        <a href="https://linkedin.com/in/nakulbhandare" class="hover:text-blue-400">🔗</a>
+        <a href="https://github.com/nakulbhandare" class="hover:text-blue-400">💻</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-gradient-to-b from-purple-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900">
+  <div class="container mx-auto text-center animate-fade-in">
+    <h2 class="text-4xl font-bold mb-12 text-indigo-700 dark:text-indigo-400">🧠 Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-t-4 border-indigo-400 animate-slide-up">
+        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-2">Programming</h3>
+        <p class="text-gray-600 dark:text-gray-300">Golang, Python, Java, TypeScript, HTML, CSS, Angular</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-t-4 border-purple-400 animate-slide-up">
+        <h3 class="text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2">Databases & Messaging</h3>
+        <p class="text-gray-600 dark:text-gray-300">MongoDB, MySQL, AWS RDS, Redshift, Kafka, RabbitMQ</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-t-4 border-pink-400 animate-slide-up">
+        <h3 class="text-xl font-semibold text-pink-700 dark:text-pink-300 mb-2">Cloud Platforms</h3>
+        <p class="text-gray-600 dark:text-gray-300">AWS, GCP, Azure, IBM Cloud, Oracle, VRA, vSphere</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-t-4 border-blue-400 animate-slide-up">
+        <h3 class="text-xl font-semibold text-blue-700 dark:text-blue-300 mb-2">Cloud Services</h3>
+        <p class="text-gray-600 dark:text-gray-300">EC2, S3, Lambda, Glue, BigQuery, Athena, DynamoDB, API Gateway</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-t-4 border-teal-400 animate-slide-up">
+        <h3 class="text-xl font-semibold text-teal-700 dark:text-teal-300 mb-2">DevOps & CI/CD</h3>
+        <p class="text-gray-600 dark:text-gray-300">Docker, Kubernetes, Helm, GitHub Actions, ArgoCD, Terraform, Istio</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-t-4 border-yellow-400 animate-slide-up">
+        <h3 class="text-xl font-semibold text-yellow-700 dark:text-yellow-300 mb-2">Monitoring & Observability</h3>
+        <p class="text-gray-600 dark:text-gray-300">Grafana, Prometheus, Loki, Jaeger, PProf, OpenTelemetry</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section id="stats" class="py-16 bg-gray-900 text-white">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-12 text-blue-400">📊 Achievements</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div>
+        <h3 class="text-5xl font-bold text-white">5+</h3>
+        <p class="mt-2 text-gray-300">Years of Experience</p>
+      </div>
+      <div>
+        <h3 class="text-5xl font-bold text-white">20+</h3>
+        <p class="mt-2 text-gray-300">Projects Delivered</p>
+      </div>
+      <div>
+        <h3 class="text-5xl font-bold text-white">8</h3>
+        <p class="mt-2 text-gray-300">Cloud Platforms</p>
+      </div>
+      <div>
+        <h3 class="text-5xl font-bold text-white">3</h3>
+        <p class="mt-2 text-gray-300">Certifications</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="py-20 bg-gray-950 text-white">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-12 text-blue-400">🛠️ Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="zoom-in">
+        <h3 class="text-2xl font-semibold text-white">Sproutly: Smart Plant Watering System</h3>
+        <p class="text-gray-400 text-sm mt-2">FastAPI, Azure, Docker, GitHub Actions, PostgreSQL</p>
+        <ul class="list-disc list-inside text-gray-300 mt-4 text-left">
+          <li>Built and deployed backend with FastAPI and Azure VM.</li>
+          <li>Integrated GitHub Actions for CI/CD and Nginx SSL configuration.</li>
+          <li>Reduced sensor errors by 20% and maintained 99.9% uptime.</li>
+        </ul>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold text-white">Cloud-Based Intrusion Detection</h3>
+        <p class="text-gray-400 text-sm mt-2">Python, TensorFlow, Flask, Azure</p>
+        <ul class="list-disc list-inside text-gray-300 mt-4 text-left">
+          <li>Developed ML model to detect DDoS attacks in real-time.</li>
+          <li>Reduced false positives by 15% and optimized model retraining cycle.</li>
+          <li>Deployed using Flask and monitored with CloudWatch.</li>
+        </ul>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="text-2xl font-semibold text-white">Order Processing Microservices</h3>
+        <p class="text-gray-400 text-sm mt-2">Golang, Kafka, MongoDB, ArgoCD</p>
+        <ul class="list-disc list-inside text-gray-300 mt-4 text-left">
+          <li>Built microservices architecture with Kafka-based event streaming.</li>
+          <li>Optimized memory use by 30% and scaled to 10K+ tx/hr.</li>
+          <li>Used ArgoCD for zero-downtime deployments on Kubernetes.</li>
+        </ul>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold text-white">Multi-Cloud Management Platform</h3>
+        <p class="text-gray-400 text-sm mt-2">Golang, Helm, AWS, GCP, Azure</p>
+        <ul class="list-disc list-inside text-gray-300 mt-4 text-left">
+          <li>Led development of Golang-based APIs across multi-cloud vendors.</li>
+          <li>Integrated Helm deployments and reduced API latency by 45%.</li>
+          <li>Implemented advanced memory profiling using pprof.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="py-20 bg-gray-900 text-white text-center">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold mb-8 text-blue-400">📬 Contact Me</h2>
+    <p class="mb-6 text-gray-300">Interested in collaborating or discussing a project? Let’s connect.</p>
+    <div class="flex justify-center gap-6 text-xl">
+      <a href="mailto:bhandarenakul@gmail.com" class="hover:text-blue-400">📧 Email</a>
+      <a href="https://linkedin.com/in/nakulbhandare" class="hover:text-blue-400" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/nakulbhandare" class="hover:text-blue-400" target="_blank">💻 GitHub</a>
+    </div>
+  </div>
+</section>
+<!-- Placeholder for Footer -->
+<footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-gray-600 dark:text-gray-300">
+  <p>&copy; 2025 Nakul Bhandare. Built with ❤️ using HTML, Tailwind CSS & AOS.</p>
+</footer>
+
+<!-- AOS Animations Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>
