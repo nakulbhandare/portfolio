@@ -7,10 +7,23 @@ on:
 jobs:
   analyze:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v4
-    - uses: ai-code-analyzer/ai-code-analyzer@v1
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        openai-api-key: ${{ secrets.OPENAI_API_KEY }}
-        fail-on-high-risk: true
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install ai-code-analyzer from PyPI
+        run: |
+          pip install ai-code-analyzer
+
+      - name: Run AI Code Analyzer
+        run: |
+          ai-code-analyzer --github-token ${{ secrets.GITHUB_TOKEN }} \
+                           --openai-api-key ${{ secrets.OPENAI_API_KEY }} \
+                           --fail-on-high-risk true
+
